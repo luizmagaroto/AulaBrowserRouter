@@ -6,7 +6,7 @@ export default function Home() {
     return (
         <>
             <Header />
-            <h1>VIVARA</h1>
+            <h1>NEW BALANCE</h1>
             <Carousel
                 infiniteLoop
                 useKeyboardArrows
