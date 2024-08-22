@@ -1,8 +1,18 @@
-import Header from "../components/header";
-import { Carousel } from 'react-responsive-carousel';
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import React, { useState } from 'react';
+import Header from './header'; // Certifique-se de que o Header está no caminho correto
+import { Carousel } from 'react-responsive-carousel'; // Ajuste o import se estiver usando uma biblioteca diferente
+import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Importa o CSS do carousel
 
 export default function Home() {
+    const [produtos] = useState([
+        {
+            title: 'Tênis New Balance 550 Masculino',
+            preco: '799,99',
+            image: "https://newbrasil.vtexassets.com/arquivos/ids/172369-1200-1200?v=638584583883230000&width=1200&height=1200&aspect=true"
+        },
+        // Repita os produtos conforme necessário
+    ]);
+
     return (
         <>
             <Header />
@@ -17,10 +27,10 @@ export default function Home() {
                 dynamicHeight
             >
                 <div>
-                    <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fdescontostop.com.br%2Floja%2Fcupom-desconto-new-balance%2F&psig=AOvVaw2N1k74g9UOvVm3dcntBbuF&ust=1724299325402000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCJD18teZhYgDFQAAAAAdAAAAABAR" alt="Rebel V2" />
+                    <img src="https://newbrasil.vtexassets.com/assets/vtex.file-manager-graphql/images/0d017274-dddc-4105-8980-f9ce629832ee___61d91ca79674364e0bde7c3aadf7663e.jpg" alt="Rebel V2" />
                 </div>
                 <div>
-                    <img src="https://newbrasil.vtexassets.com/assets/vtex.file-manager-graphql/images/9abe3509-b6d6-4a8e-af69-2acbd84d7b97___bb4e068dfa1153ca70c6b211771740f5.jpg" alt="New Balance X São Paulo" />
+                    <img src="https://newbrasil.vtexassets.com/assets/vtex.file-manager-graphql/images/0d017274-dddc-4105-8980-f9ce629832ee___61d91ca79674364e0bde7c3aadf7663e.jpg" alt="New Balance X São Paulo" />
                 </div>
             </Carousel>
         </>
