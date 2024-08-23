@@ -15,5 +15,5 @@ export default function Header() {
         <li>Ofertas</li>
     </Link>
     </header>
-    );
+    )
 }
